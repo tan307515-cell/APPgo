@@ -114,3 +114,5 @@ jobs:
           echo "### 已发布 ${{ steps.meta.outputs.name }}" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "https://github.com/${{ github.repository }}/releases/download/${{ steps.meta.outputs.tag }}/${{ steps.meta.outputs.asset_name }}" >> "$GITHUB_STEP_SUMMARY"
+
+# relink-nav: 2026-10-12 将下载导航指向本仓 Release，并强制重跑发布流水线确保附件存在
